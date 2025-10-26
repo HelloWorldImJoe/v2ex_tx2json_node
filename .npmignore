@@ -1,0 +1,11 @@
+node_modules
+tests
+.gitignore
+.gitattributes
+/.github
+*.log
+/.env*
+/.vscode
+__tests__
+README.md
+!README.md

@@ -4,10 +4,25 @@
   "description": "Convert V2EX transaction (tx) pages to JSON",
   "main": "index.js",
   "keywords": ["v2ex", "solana", "tx", "json"],
-  "author": "HelloWorldImJoe",
+  "author": "Joe <sdauwangzh@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelloWorldImJoe/v2ex_tx2json_node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HelloWorldImJoe/v2ex_tx2json_node/issues"
+  },
+  "homepage": "https://github.com/HelloWorldImJoe/v2ex_tx2json_node#readme",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm test",
+    "publish:dry": "npm publish --dry-run --access public",
+    "prepublishOnly": "npm test",
+    "publish:patch": "npm run build-if-needed && npm version patch -m \"chore(release): %s [skip ci]\" && git push --follow-tags && npm publish --access public",
+    "publish:minor": "npm run build-if-needed && npm version minor -m \"chore(release): %s [skip ci]\" && git push --follow-tags && npm publish --access public",
+    "publish:major": "npm run build-if-needed && npm version major -m \"chore(release): %s [skip ci]\" && git push --follow-tags && npm publish --access public",
+    "build-if-needed": "echo \"no build step\""
   },
   "dependencies": {
     "node-fetch": "^2.6.7"
