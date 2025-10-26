@@ -1,9 +1,14 @@
 {
   "name": "v2ex-tx2json",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert V2EX transaction (tx) pages to JSON",
   "main": "index.js",
-  "keywords": ["v2ex", "solana", "tx", "json"],
+  "keywords": [
+    "v2ex",
+    "solana",
+    "tx",
+    "json"
+  ],
   "author": "Joe <sdauwangzh@gmail.com>",
   "repository": {
     "type": "git",
