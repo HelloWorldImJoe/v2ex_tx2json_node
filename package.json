@@ -1,0 +1,18 @@
+{
+  "name": "v2ex-tx2json",
+  "version": "0.1.0",
+  "description": "Convert V2EX transaction (tx) pages to JSON",
+  "main": "index.js",
+  "keywords": ["v2ex", "solana", "tx", "json"],
+  "author": "HelloWorldImJoe",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
